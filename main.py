@@ -57,12 +57,13 @@ app.layout=html.Div((
                 2019: '2019',
                 2020: '2020',
                 2021: '2021',
-                2022: {'label': '2022', 'style': {'color':'#f50', 'font-weight':'bold'}},
+                2022: '2022',
+                2023: {'label': '2023', 'style': {'color':'#f50', 'font-weight':'bold'}},
                 },
                  step=1, 
                 min=2017,
-                max=2022,
-                value=[2017,2022],     # default value initially chosen
+                max=2023,
+                value=[2017,2023],     # default value initially chosen
                 dots=True,             # True, False - insert dots, only when step>1
                 allowCross=True,      # True,False - Manage handle crossover
                 disabled=False,        # True,False - disable handle
