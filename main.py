@@ -13,7 +13,7 @@ import dash_bootstrap_components as dbc
 
 ########################DATOS##############################
 
-url='https://docs.google.com/spreadsheets/d/e/2PACX-1vQ2SbYhQ01W6gyOwm_BfZpZUOH1peuA8QMlj03-wPvRt2Us_4gmXKrZYhDHPmBi4Q/pub?output=csv'
+url='https://docs.google.com/spreadsheets/d/e/2PACX-1vTB99CuC-U9_XHsKlGIrJOTDp2wQNelxnaCACW7Y1lL6ewZxB4Ejj3Fo6GW_BYggQl50BkJhbz9mX6V/pub?gid=225257226&single=true&output=csv'
 df=pd.read_csv(url)
 
 url2='https://docs.google.com/spreadsheets/d/e/2PACX-1vTRsVAq_5SGisQBZXkdJpv9DcWVLZwzyQDrmEihhd9doYYLPTKsCNFIo62Ojo9MXAeKUHr3_s26EcbB/pub?output=csv'
