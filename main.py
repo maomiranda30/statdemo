@@ -243,7 +243,7 @@ def update_graph5(mao,slid):
         linea2=df[linea]    
         linea3=linea2.groupby(['AÑO','Nivel']).agg({mao:'count'}).reset_index()
         linea3['%'] = round(100 * linea3[mao] / linea3.groupby('AÑO')[mao].transform('sum'),0)
-        fig = px.line(linea3, x="AÑO", y='%', text='%',color='Nivel',range_x=[2017,2023.5],title='Puntaje por niveles')
+        fig = px.line(linea3, x="AÑO", y='%', text='%',color='Nivel',title='Puntaje por niveles')
         fig.update_traces(textposition="bottom right")
         fig.update_layout(plot_bgcolor='rgba(0,0,0,0)',title=dict(font=dict(size=15)),title_x=0.5)  
 
