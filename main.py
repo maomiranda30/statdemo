@@ -58,12 +58,13 @@ app.layout=html.Div((
                 2020: '2020',
                 2021: '2021',
                 2022: '2022',
-                2023: {'label': '2023', 'style': {'color':'#f50', 'font-weight':'bold'}},
+                2023:'2023',
+                2025: {'label': '2025', 'style': {'color':'#f50', 'font-weight':'bold'}},
                 },
                  step=1, 
                 min=2017,
-                max=2023,
-                value=[2017,2023],     # default value initially chosen
+                max=2025,
+                value=[2017,2025],     # default value initially chosen
                 dots=True,             # True, False - insert dots, only when step>1
                 allowCross=True,      # True,False - Manage handle crossover
                 disabled=False,        # True,False - disable handle
@@ -616,3 +617,4 @@ def update_graph4(mao4,slid4):
 
 if __name__ == "__main__":
     app.run_server(debug = True)
+
